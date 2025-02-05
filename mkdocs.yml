@@ -1,9 +1,11 @@
-site_name: dingzhensite666
+site_name: 丁真珍珠
 nav:
   - Home: index.md
   - mkdocs: 
+    - mkdocss/introduction.md
     - 常用操作: mkdocss/mkdocs_method.md
     - 有用的排版: mkdocss/mkdocs_arrange.md
+
   - linux:
     - linux/linux_note/linux_note.md
     - linux/linux_others/gg.md
@@ -41,6 +43,24 @@ theme:
   name: material
   icon:
     logo : fontawesome/solid/w
+
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+
+
+
   favicon: assets/favicon.ico
   font:
     text: Roboto

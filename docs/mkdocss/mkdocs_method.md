@@ -13,7 +13,7 @@ mkdocs serve
 
 !!! info "note"
 
-    我所采用的本地仓库与git仓库间的连接方式由HTTPS协议改为了SSH协议
+    我所采用的本地仓库与git仓库间的连接方式由HTTPS协议改为了SSH协议,否则默认的HTTPS协议总是在执行`git push origin main`命令时候由于链接超时而挂掉
 
 
 ## 修改本地文件后同步到部署站点
