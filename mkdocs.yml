@@ -1,9 +1,23 @@
 site_name: dingzhensite666
 nav:
   - Home: index.md
-  - About: about.md
-  - record for guitar learing: guitar.md
-  - linux: linux.md
+  - mkdocs: 
+    - 常用操作: mkdocss/mkdocs_method.md
+    - 有用的排版: mkdocss/mkdocs_arrange.md
+  - linux:
+    - linux/linux_note/linux_note.md
+    - linux/linux_others/gg.md
+  - git: 
+    - git/git.md
+  - leetcode: 
+    - leetcode/leetcode.md
+  - guitar learing: 
+    - guitar/guitar.md
+  - Section:
+    - section/indexx.md 
+    - Page 1: section/page-1.md
+    - Page 2: section/page-2.md
+
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
@@ -20,6 +34,9 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+
+
+
 theme:
   name: material
   icon:
@@ -46,6 +63,17 @@ theme:
       accent: deep orange
 
   features:
-    - navigation.footer
+#    - navigation.footer
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+
 
 
