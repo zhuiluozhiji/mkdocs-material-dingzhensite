@@ -11,8 +11,9 @@ nav:
     - linux/linux_others/gg.md
   - git: 
     - git/git.md
-  - leetcode: 
+  - cpp learning: 
     - leetcode/leetcode.md
+    - leetcode/cpp_learning.md
   - guitar learing: 
     - guitar/guitar.md
   - others: 
