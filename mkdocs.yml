@@ -12,8 +12,8 @@ nav:
   - git: 
     - git/git.md
   - cpp learning: 
-    - leetcode/leetcode.md
-    - leetcode/cpp_learning.md
+    - leetcode : leetcode/leetcode.md
+    - cpp learning : leetcode/cpp_learning/cpp_learing.md
   - guitar learing: 
     - guitar/guitar.md
   - others: 
@@ -86,6 +86,7 @@ theme:
       accent: deep orange
 
   features:
+    - mathjax
 #    - navigation.footer
     - navigation.instant
     - navigation.tracking
