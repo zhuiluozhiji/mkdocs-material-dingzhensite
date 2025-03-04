@@ -14,6 +14,7 @@ nav:
   - cpp learning: 
     - leetcode : leetcode/leetcode.md
     - cpp learning : leetcode/cpp_learning/cpp_learing.md
+    - oop : leetcode/oop/oop.md
   - guitar learing: 
     - guitar/guitar.md
   - others: 
@@ -98,6 +99,7 @@ theme:
     - navigation.indexes
     - navigation.top
     - toc.follow
+    - content.code.copy
 
 
 
