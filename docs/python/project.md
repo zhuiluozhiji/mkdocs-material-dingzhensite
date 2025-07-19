@@ -17,7 +17,7 @@ pip --version
 
 
 
-!!! info 什么是conda？
+!!! info 
 
     Conda 是一个开源的包管理器和环境管理系统，专为数据科学和机器学习项目设计。
 
