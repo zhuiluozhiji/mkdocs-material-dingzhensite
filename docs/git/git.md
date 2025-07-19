@@ -70,7 +70,8 @@ git remote set-url origin git@github.com:zhuiluozhiji/short-term-project.git
 ```bash
 git remote -v
 ```
----
+
+
 
 在 `short-term-project/` 目录下运行：
 
@@ -117,6 +118,7 @@ git remote set-url origin git@github.com:zhuiluozhiji/short-term-project.git
 ```bash
 git remote -v
 ```
+
 
 ## 之后的更改仅需要的操作
 
