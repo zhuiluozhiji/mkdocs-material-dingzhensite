@@ -15,6 +15,9 @@ nav:
     - leetcode : leetcode/leetcode.md
     - cpp learning : leetcode/cpp_learning/cpp_learing.md
     - oop : leetcode/oop/oop.md
+  - python learning:
+    - project: python/project.md
+
   - guitar learing: 
     - guitar/guitar.md
   - others: 
