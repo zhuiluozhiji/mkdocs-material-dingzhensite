@@ -15,6 +15,41 @@ pip --version
 ```
 ### 2. 安装 Miniconda（推荐）
 
+
+
+!!! info 什么是conda？
+    Conda 是一个开源的包管理器和环境管理系统，专为数据科学和机器学习项目设计。
+
+    - 包管理器：安装、更新、删除软件包
+        ```bash
+        # 安装包（比如您代码中用的 numpy）
+        conda install numpy
+
+        # 安装特定版本
+        conda install numpy=1.21.0
+
+        # 搜索包
+        conda search numpy
+
+        # 更新包
+        conda update numpy
+        ```
+    - 环境管理器：创建隔离的 Python 环境
+        ```bash
+        # 创建环境（您刚才用的）
+        conda create -n data-marketplace python=3.13
+
+        # 激活环境
+        conda activate data-marketplace
+
+        # 查看所有环境
+        conda env list
+
+        # 删除环境
+        conda env remove -n old-env
+        ```
+
+
 ```bash
 # 下载 Miniconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -71,7 +106,7 @@ python -c "from utils.metrics import rmse; print('Environment ready!')"
 
 ```
 
-??? note
+!!! tip
 
     替代方案：使用系统包管理器(如果您不想使用 conda，可以直接用系统的 Python)
     ```bash
@@ -81,3 +116,16 @@ python -c "from utils.metrics import rmse; print('Environment ready!')"
     # 或使用 Arch 包管理器
     [dingzhen@77qq ~]$ sudo pacman -S python-numpy python-pandas python-scikit-learn python-matplotlib
     ```
+    
+
+
+
+**推荐的工作流程:**
+```bash
+# 每次开始工作
+conda activate data-marketplace
+cd /home/dingzhen/Projects/data-marketplace
+
+# 运行您的代码
+python -c "from utils.metrics import gain_function; print('Environment ready!')"
+```
