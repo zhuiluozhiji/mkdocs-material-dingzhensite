@@ -134,7 +134,10 @@ git pull --rebase origin main
 git pull origin main
 ```
 
-![1752890708193](image/git/1752890708193.png)
+![alt text](image.png)
 
+![1752926692898](image/git/1752926692898.png)
 
-![1752926682271](image/git/1752926682271.png)
+![1752926984463](image/git/1752926984463.png)
+
+![1752927071276](image/git/1752927071276.png)

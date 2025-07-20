@@ -7,21 +7,28 @@ nav:
     - 有用的排版: mkdocss/mkdocs_arrange.md
 
   - linux:
-    - linux/linux_note/linux_note.md
-    - linux/linux_others/gg.md
+    - linux/windows/windows.md
+    - linux/linux/linux.md
   - git: 
     - git/git.md
   - cpp learning: 
     - leetcode : leetcode/leetcode.md
     - cpp learning : leetcode/cpp_learning/cpp_learing.md
-    - oop : leetcode/oop/oop.md
+
   - python learning:
     - project: python/project.md
 
-  - guitar learing: 
-    - guitar/guitar.md
+  - skill learning:
+    - git : skill/git.md
+    - shell : skill/shell.md
+
   - others: 
     - Clash Royale: others/Clash_Royale/Clash_Royale.md
+
+  - guitar learing: 
+    - guitar/guitar.md
+
+
   - Section:
     - section/indexx.md 
     - Page 1: section/page-1.md
