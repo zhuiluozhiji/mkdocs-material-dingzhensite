@@ -1,3 +1,7 @@
+# linux
+## 基操
+[菜鸟教程 Linux 命令手册](https://www.runoob.com/linux/linux-command-manual.html){:target="_blank"}
+
 ## pacman
 pacman -S 用法
 

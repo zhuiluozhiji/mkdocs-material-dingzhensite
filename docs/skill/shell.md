@@ -76,7 +76,7 @@ if __name__ == "__main__":
 
 
     Python 的标准库模块，用于执行系统命令和子进程。
-    
+
     1. 导入模块 `import subprocess  # 导入整个模块`
     2. 使用模块中的函数 
         ```py
@@ -112,6 +112,16 @@ if __name__ == "__main__":
     import subprocess
     result = subprocess.run("git pull", shell=True, capture_output=True)
     print(result.stdout)  # 可以获取输出
+    ```
+    ![](img/shell/2025-07-21-20-09-23.png)
+
+    ![](img/shell/2025-07-21-20-11-23.png)
+
+- `strip()` 是 Python 字符串的方法，用于移除字符串两端的空白字符。
+    ```py
+    # 判断输出是否有实际内容
+    if result.stdout.strip():
+        print(result.stdout)
     ```
 
 
