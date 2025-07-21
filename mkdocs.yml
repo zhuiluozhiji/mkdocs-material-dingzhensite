@@ -9,14 +9,14 @@ nav:
   - linux:
     - linux/windows/windows.md
     - linux/linux/linux.md
-  - git: 
-    - git/git.md
+
   - cpp learning: 
     - leetcode : leetcode/leetcode.md
     - cpp learning : leetcode/cpp_learning/cpp_learing.md
 
   - python learning:
     - project: python/project.md
+    - python learning: python/python_learning.md
 
   - skill learning:
     - git : skill/git.md
