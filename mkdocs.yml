@@ -1,12 +1,12 @@
 site_name: 丁真珍珠
 nav:
   - Home: index.md
-  - mkdocs: 
+  - 🌈 mkdocs: 
     - mkdocss/introduction.md
     - 常用操作: mkdocss/mkdocs_method.md
     - 有用的排版: mkdocss/mkdocs_arrange.md
 
-  - linux:
+  - 💻 linux:
     - linux/windows/windows.md
     - linux/linux/linux.md
 
@@ -14,11 +14,11 @@ nav:
     - leetcode : leetcode/leetcode.md
     - cpp learning : leetcode/cpp_learning/cpp_learing.md
 
-  - python learning:
+  - 🔒 python learning:
     - project: python/project.md
     - python learning: python/python_learning.md
 
-  - skill learning:
+  - 🔥 skill:
     - git : skill/git.md
     - shell : skill/shell.md
 

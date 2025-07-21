@@ -84,19 +84,19 @@ if __name__ == "__main__":
         ```
     3. 用法
     ```py
-        import subprocess
+    import subprocess
 
-        # 基本用法
-        result = subprocess.run("git status", shell=True)
+    # 基本用法
+    result = subprocess.run("git status", shell=True)
 
-        # 完整用法
-        result = subprocess.run(
-            command="git pull",
-            shell=True, #在 shell 中执行 通过系统 shell（Windows 的 cmd 或 PowerShell）执行命令
-            text=True, #一般就是true 以文本字符串形式处理输入输出，而不是字节
-            encoding='utf-8', #字符编码 确保中文等非 ASCII 字符正确显示
-            capture_output=True
-        )
+    # 完整用法
+    result = subprocess.run(
+        command="git pull",
+        shell=True, #在 shell 中执行 通过系统 shell（Windows 的 cmd 或 PowerShell）执行命令
+        text=True, #一般就是true 以文本字符串形式处理输入输出，而不是字节
+        encoding='utf-8', #字符编码 确保中文等非 ASCII 字符正确显示
+        capture_output=True
+    )
     ```
     4. 主要属性
     ```py
@@ -112,5 +112,6 @@ if __name__ == "__main__":
     result = subprocess.run("git pull", shell=True, capture_output=True)
     print(result.stdout)  # 可以获取输出
     ```
+
 
 
