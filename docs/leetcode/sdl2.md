@@ -2,14 +2,14 @@
 用arch linux in wsl2开发一个cpp的游戏项目
 ## get started
 
-!!! tip "available options"
+??? tip "available options"
     在 Windows 上使用 WSL2 + Arch Linux 来开发一个 C++ 游戏项目时，要实现图形化界面支持，你可以结合以下技术来实现开发环境、图形显示和调试体验：
 
     ---
 
-    ## 🎮 1. 图形界面支持方式
+    ### 🎮 1. 图形界面支持方式
 
-    ### ✅ 方案一：使用 Windows 上的图形服务（推荐）
+    #### ✅ 方案一：使用 Windows 上的图形服务（推荐）
 
     **使用 Windows 的 X Server + WSLg**
     WSL2 从 Windows 11 开始自带 **WSLg（Windows Subsystem for Linux GUI）**，它支持在 Linux 子系统中直接运行 GUI 程序（包括基于 X11 和 Wayland 的程序）。
@@ -33,7 +33,7 @@
 
     ---
 
-    ### ✅ 方案二：使用 Windows 的 X Server（例如 VcXsrv、X410）
+    #### ✅ 方案二：使用 Windows 的 X Server（例如 VcXsrv、X410）
 
     如果你使用 Windows 10 或禁用了 WSLg，可以使用 X Server：
 
@@ -51,7 +51,7 @@
 
     ---
 
-    ## 🔧 2. 游戏开发相关工具链建议
+    ### 🔧 2. 游戏开发相关工具链建议
 
     | 类型   | 工具/库                          | 安装命令                                                |
     | ---- | ----------------------------- | --------------------------------------------------- |
@@ -62,7 +62,7 @@
 
     ---
 
-    ## 🕹 示例：编译一个简单的 SDL2 程序
+    ### 🕹 示例：编译一个简单的 SDL2 程序
 
     1. 安装 SDL2：
 
@@ -95,7 +95,7 @@
 
     ---
 
-    ## 💡 如果你用 Vulkan 或 OpenGL：
+    ### 💡 如果你用 Vulkan 或 OpenGL：
 
     * WSLg 支持 **OpenGL + Vulkan 显示加速**
     * 可结合 `vulkan-tools` 测试：
@@ -107,7 +107,7 @@
 
     ---
 
-    ## 🚀 推荐开发流程（Windows + WSL2）：
+    ### 🚀 推荐开发流程（Windows + WSL2）：
 
     1. 用 VS Code 的 **WSL Remote 插件** 开发代码
     2. 在 Arch 下使用 `cmake` 构建
@@ -115,6 +115,4 @@
     4. 用 WSLg 或 X Server 显示图形界面
     5. （可选）使用 git + GitHub/GitLab 做版本管理
 
-    ---
 
-    如果你告诉我你具体的图形技术栈（SDL/OpenGL/Vulkan/ImGui 等），我还可以给你定制化开发配置建议。需要我帮你搭一个开发框架吗？
