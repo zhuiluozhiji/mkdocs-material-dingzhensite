@@ -1,4 +1,19 @@
 # linux
+## wsl打不开解决方法
+```
+C:\Users\78100>wsl
+灾难性故障
+错误代码: Wsl/Service/E_UNEXPECTED
+```
+
+按 Win + R，输入 services.msc 打开服务管理器。
+
+找到 “LxssManager” 服务，右键选择 “重新启动”。
+```
+wsl --shutdown
+wsl
+```
+
 ## 基操
 [菜鸟教程 Linux 命令手册](https://www.runoob.com/linux/linux-command-manual.html){:target="_blank"}
 

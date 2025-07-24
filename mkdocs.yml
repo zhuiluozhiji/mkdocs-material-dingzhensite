@@ -7,12 +7,13 @@ nav:
     - 有用的排版: mkdocss/mkdocs_arrange.md
 
   - 💻 linux:
-    - linux/windows/windows.md
-    - linux/linux/linux.md
+    - windows: linux/windows/windows.md
+    - arch: linux/linux/linux.md
 
   - 🌐 cpp learning: 
     - 🛠️ leetcode : leetcode/leetcode.md
-    - cpp learning : leetcode/cpp_learning/cpp_learing.md
+    - 🎮 cpp learning : leetcode/cpp_learning/cpp_learing.md
+    - project
 
   - 🔒 python learning:
     - project: python/project.md
