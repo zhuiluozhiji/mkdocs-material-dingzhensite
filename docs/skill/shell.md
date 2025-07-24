@@ -113,9 +113,9 @@ if __name__ == "__main__":
     result = subprocess.run("git pull", shell=True, capture_output=True)
     print(result.stdout)  # 可以获取输出
     ```
-    ![](img/shell/2025-07-21-20-09-23.png)
+    ![](image/shell/2025-07-21-20-09-23.png)
 
-    ![](img/shell/2025-07-21-20-11-23.png)
+    ![](image/shell/2025-07-21-20-11-23.png)
 
 - `strip()` 是 Python 字符串的方法，用于移除字符串两端的空白字符。
     ```py
