@@ -1,5 +1,20 @@
 # cpp game
 用arch linux in wsl2开发一个cpp的游戏项目
+
+!!! note "key"
+    图形库使用SDL2，指定使用Wayland + EGL + GLES
+
+    SDL2学习资源：
+    https://lazyfoo.net/tutorials/SDL/
+
+    https://www.youtube.com/watch?v=c5UEFzOJ9-U&list=PLVotA8ycjnCs3DNWIbEIpBrjYkhJq11q-&index=2
+    
+    https://www.cirmall.com/upload/webench/1475218799/works_SDL2%20%E5%88%9D%E7%BA%A7%E6%95%99%E7%A8%8B.pdf
+
+    编译命令：
+    ```shell
+    g++ -o test test.cpp -lSDL2
+    ```
 ## get started
 
 ??? tip "available options"
@@ -203,7 +218,7 @@ X Error of failed request:  BadValue (integer parameter out of range for operati
 
 解决方案：
 
-!!! question "方案一(未采用):**显式使用软件渲染**"
+??? question "方案一(未采用):**显式使用软件渲染**"
     ![](image/sdl2/2025-07-24-18-10-46.png)
 
     ✅ **最小可运行版本（使用软件渲染）**：如果你只是想确认 SDL 窗口能正常显示颜色，用这个代码即可：
@@ -459,7 +474,7 @@ export SDL_VIDEODRIVER=wayland
 export SDL_RENDER_DRIVER=opengles2
 ```
 
-2. 修改代码以使用 GLES
+2. **(经测试这一步没有必要 都能跑)**修改代码以使用 GLES
 SDL2 会自动选择 EGL 和 GLES2 渲染器，但你可以显式指定 GLES 渲染器。修改SDL_CreateRenderer 的标志：
 ```cpp
 SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
@@ -470,4 +485,8 @@ SDL 会自动选择 GLES 渲染器，无需额外配置。
 
 **为了永久性配置，加到你的 shell 配置文件中**
 ![1753354302485](image/sdl2/1753354302485.png)
+
+游戏效果：
+![1753355138187](image/sdl2/1753355138187.png)
+
 

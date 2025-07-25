@@ -17,7 +17,12 @@ wsl
 ## 基操
 [菜鸟教程 Linux 命令手册](https://www.runoob.com/linux/linux-command-manual.html){:target="_blank"}
 
+```shell
+# 强制+递归 的删除  -f强制  r递归
+rm -rf /path/to/folder
+```
 
+## 常识
 - `~/.bashrc` 是一个配置文件，用于为 Bash Shell 设置用户级别的环境变量和启动配置。它是每个用户的专属文件，位于用户的主目录下（~ 表示主目录）。
     ![1753354404584](image/linux/1753354404584.png)
     ![1753354444335](image/linux/1753354444335.png)
