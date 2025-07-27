@@ -41,7 +41,7 @@ int main() {
 
 ## 2.18 leetcode100-回溯-全排列
 
-![alt text](image-1.png)
+![](image/leetcode/2025-07-27-10-43-00.png)
 
 以下是答案的解法，已经将时间复杂度优化到最佳
 
@@ -105,7 +105,7 @@ class Solution {
 
 ## 2.18 leetcode100-回溯-子集
 
-![alt text](image-2.png)
+![](image/leetcode/2025-07-27-10-41-08.png)
 
 我写的解法：
 
@@ -197,7 +197,7 @@ class Solution {
 
 ## 2.19 leetcode100-回溯-电话号码字母组合
 
-![alt text](image-3.png)
+![](image/leetcode/2025-07-27-10-41-48.png)
 
 ```cpp
 class Solution {
@@ -681,7 +681,7 @@ f(i, j) =
 \end{cases}
 $$
 
-![alt text](image-4.png)
+![](image/leetcode/2025-07-27-10-42-08.png)
 
 ## 2.26 leetcode100-回溯-N 皇后
 
