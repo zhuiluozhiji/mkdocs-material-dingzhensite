@@ -35,14 +35,14 @@ def main():
         return
     
     print("\n开始执行 Git 操作...")
-    
+    '''
     # 1. Git pull (需要交互输入密码)
     print("[1/4] 正在拉取远程更新...")
     print("可能需要输入 SSH 密钥的 passphrase...")
     if not run_command_interactive("git pull"):
         print("Git pull 失败！")
         return
-    
+    '''
     # 2. Git add .
     print("[2/4] 正在添加所有更改...")
     if not run_command("git add ."):

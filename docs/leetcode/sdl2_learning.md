@@ -224,4 +224,4 @@ int main() {
 
 ![1753415142417](image/sdl2_learning/1753415142417.png)
 
-## lec4: 
+## lec4: Objects and Drawing
