@@ -135,7 +135,7 @@ git pull origin main
 
 ![](image/git/2025-07-20-09-28-38.png)
 
-!!! bug "`git_auto.py`"
+??? bug "`git_auto.py`脚本"
     **一份`git_auto.py`脚本实现自动拉取并提交**
     ```py
     import subprocess

@@ -12,7 +12,7 @@ nav:
 
   - 🌐 cpp learning: 
     - 🛠️ leetcode : leetcode/leetcode.md
-    - 💻 cpp learning : leetcode/cpp_learning/cpp_learning.md
+    - 💻 cpp learning : leetcode/cpp_learning.md
     - 🎮 sdl2 project : leetcode/sdl2.md
     - 📚 sdl2 learning : leetcode/sdl2_learning.md
 
