@@ -22,9 +22,11 @@ nav:
 
   - 🔥 skill:
     - 🐳 git : 
-      - skill/git.md
+      - skill/git/git.md
+      - skill/git/git_config.md
+      - skill/git/git_workflow.md
     - 📟 shell : 
-      - skill/shell.md
+      - skill/shell/shell.md
 
   - others: 
     - Clash Royale: others/Clash_Royale/Clash_Royale.md
