@@ -79,8 +79,9 @@ theme:
 
 
 
-  favicon: assets/web_fic.jpg
-  font:
+  favicon: assets/web_fic.jpg # 网页icon
+  logo: assets/pic.jpg #左上角logo，可插入图片链接
+  font: 
     # text: Roboto
     # code: Red Hat Mono
     text: JetBrains Mono, LXGW WenKai Screen GB Screen 
