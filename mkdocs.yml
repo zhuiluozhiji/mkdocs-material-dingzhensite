@@ -22,6 +22,7 @@ nav:
 
   - 🔥 skill:
     - 🐳 git : 
+      - skill/git/index.md
       - skill/git/git.md
       - Page 1 : skill/git/git_config.md
       - Page 2 : skill/git/git_workflow.md
@@ -108,7 +109,7 @@ theme:
     # - navigation.tabs.sticky # navigation tabs will lock below the header
     - navigation.sections # 允许章节嵌套
     # - navigation.expand  # 可选：(在我们这是左边栏)自动展开当前 active 页面
-    - navigation.path
+    - navigation.path # 在头顶显示当前路径
     - navigation.indexes
     - navigation.top
     - toc.follow # 右边栏
