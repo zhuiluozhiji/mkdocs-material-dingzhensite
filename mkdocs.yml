@@ -21,8 +21,10 @@ nav:
     - python learning: python/python_learning.md
 
   - 🔥 skill:
-    - 🐳 git : skill/git.md
-    - 📟 shell : skill/shell.md
+    - 🐳 git : 
+      - skill/git.md
+    - 📟 shell : 
+      - skill/shell.md
 
   - others: 
     - Clash Royale: others/Clash_Royale/Clash_Royale.md
