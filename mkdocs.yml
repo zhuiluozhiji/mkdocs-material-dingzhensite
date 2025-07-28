@@ -79,10 +79,12 @@ theme:
 
 
 
-  favicon: assets/favicon.ico
+  favicon: assets/web_fic.jpg
   font:
-    text: Roboto
-    code: Red Hat Mono
+    # text: Roboto
+    # code: Red Hat Mono
+    text: JetBrains Mono, LXGW WenKai Screen GB Screen 
+    code: JetBrains Mono, Consolas
   palette:
     # Dark Mode
     - scheme: slate
