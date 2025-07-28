@@ -1,12 +1,15 @@
 
 # Git
 
+## example
+
+
 很好！你已经在 GitHub 创建了仓库：[zhuiluozhiji/short-term-project](https://github.com/zhuiluozhiji/short-term-project)。接下来我们来**一步步指导你将本地项目结构搭建好并推送到该仓库中**，以便小组成员协作开发。
 
 
 ---
 
-## 🧭 建仓库
+
 
 我们要将如下项目结构上传到该仓库中：
 
@@ -117,6 +120,8 @@ git push origin main
     ```bash
     git remote -v
     ```
+
+## 🧭 建仓库
 
 
 ## 之后的更改仅需要的操作
