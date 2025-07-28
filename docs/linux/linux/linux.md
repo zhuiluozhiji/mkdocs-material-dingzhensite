@@ -46,8 +46,9 @@ sudo pacman -Si package     # 显示软件包详细信息
 ```
 
 主要 pacman 操作：
-- -S (Sync) - 安装/同步软件包
--  -R (Remove) - 删除软件包
-- -Q (Query) - 查询已安装的软件包
-- -U (Upgrade) - 从本地文件安装/升级
-
+```shell
+-S (Sync) # 安装/同步软件包
+-R (Remove) # 删除软件包
+-Q (Query) # 查询已安装的软件包
+-U (Upgrade) # 从本地文件安装/升级
+```

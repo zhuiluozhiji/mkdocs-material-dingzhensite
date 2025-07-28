@@ -56,8 +56,9 @@ def main():
     
     # 4. Git push (可能也需要交互输入密码)
     print("[4/4] 正在推送到远程仓库...")
-    print("可能需要输入 SSH 密钥的 passphrase...")
-    if not run_command_interactive("git push"):
+    # print("可能需要输入 SSH 密钥的 passphrase...")
+    # if not run_command_interactive("git push"):  # 现在我已经做了ssh免密配置了
+    if not run_command("git push"):
         print("Git push 失败！")
         return
     
