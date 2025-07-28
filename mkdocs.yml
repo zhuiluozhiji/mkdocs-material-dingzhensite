@@ -23,8 +23,8 @@ nav:
   - 🔥 skill:
     - 🐳 git : 
       - skill/git/git.md
-      - skill/git/git_config.md
-      - skill/git/git_workflow.md
+      - Page 1 : skill/git/git_config.md
+      - Page 2 : skill/git/git_workflow.md
     - 📟 shell : 
       - skill/shell/shell.md
 
@@ -35,10 +35,7 @@ nav:
     - guitar/guitar.md
 
 
-  - Section:
-    - section/indexx.md 
-    - Page 1: section/page-1.md
-    - Page 2: section/page-2.md
+
 
 markdown_extensions:
   - attr_list
@@ -110,7 +107,7 @@ theme:
     - navigation.tabs # 启用标签页导航,抬头的横栏tabs：home skill etc.
     # - navigation.tabs.sticky # navigation tabs will lock below the header
     - navigation.sections # 允许章节嵌套
-    - navigation.expand  # 可选：自动展开当前 active 页面
+    # - navigation.expand  # 可选：(在我们这是左边栏)自动展开当前 active 页面
     - navigation.path
     - navigation.indexes
     - navigation.top
