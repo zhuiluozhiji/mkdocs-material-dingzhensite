@@ -1,0 +1,573 @@
+#[Info]
+site_name: BruceJin's Notebook
+site_author: Eternity # your name
+#[UI]
+theme:
+  name: material
+  custom_dir: docs/overrides #覆写路径
+  # font: #谷歌字体，自行搜索
+  #   text: Bitter  #文本字体
+  #   code: Roboto Mono  #代码字体
+  logo: assets/头像.jpg #左上角logo，可插入图片链接
+  favicon: assets/头像.jpg # 网页icon
+
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: 关闭自动模式
+    #primary: blue grey
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # 日间模式
+      primary: blue grey # 上方的
+      accent: blue # 链接等可交互元件的高亮色
+      # teal
+      toggle:
+        icon: material/toggle-switch # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate # 夜间模式
+      primary: black
+      accent: indigo
+      # teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: 切换至日间模式
+
+  features:
+    - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
+    # - navigation.instant
+    #- header.autohide  #自动隐藏
+    - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
+    - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
+    # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
+    # - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+    - search.share #搜索分享按钮
+    # - navigation.expand # 打开Tab时左侧目录全部展开
+    - navigation.indexes #启用节索引页后，可以将文档直接附加到节
+    # - content.tabs.link
+    - content.tooltips
+    - content.code.copy #代码复制
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+  language: zh # 一些提示性的文字会变成中文
+
+  icon:
+    repo: fontawesome/brands/github #右上角图标
+    logo: logo
+# edit_uri: edit/main/docs # 编辑按钮跳转的链接
+repo_url: https://github.com/BruceJqs/MyNotebook # 右上角点击跳转的链接
+repo_name: BruceJqs/MyNotebook # 右上角的名字
+
+# [Navigation]
+nav:
+  - 首页: index.md
+  - Computer Science:
+    - 数字逻辑设计｜Digital Design: 
+      - blog/Computer Science/Digital Design/index.md
+    - 数据结构基础｜Fundamental Data Structure:
+      - blog/Computer Science/FDS/index.md 
+      - Project 1: blog/Computer Science/FDS/FDS-Project1 report.md
+      - Project 2: blog/Computer Science/FDS/FDS-Project2 report.md
+      - Project 3: blog/Computer Science/FDS/FDS-Project3 report.md
+    - 计算机组成｜Computer Organization:
+      - blog/Computer Science/Computer Organization/index.md
+      - Notes:
+        - "Chapter 01: Computer abstractions and Technology": blog/Computer Science/Computer Organization/Chapter 1.md
+        - "Chapter 03: Arithmetic for Computers": blog/Computer Science/Computer Organization/Chapter 3.md
+        - "Chapter 02: Instructions : Language of the Machine": blog/Computer Science/Computer Organization/Chapter 2.md
+        - "Chapter 04: The Processors": blog/Computer Science/Computer Organization/Chapter 4.md
+        - "Chapter 05: Memory Hierarchy": blog/Computer Science/Computer Organization/Chapter 5.md
+        - "Appendix: Storage, Networks, and Other Peripherals": blog/Computer Science/Computer Organization/Appendix.md
+      - Homeworks:
+        - "Homework 03": blog/Computer Science/Computer Organization/Homework 3.md
+        - "Homework 02": blog/Computer Science/Computer Organization/Homework 2.md
+        - "Homework 04": blog/Computer Science/Computer Organization/Homework 4.md
+        - "Homework 05": blog/Computer Science/Computer Organization/Homework 5.md
+    - 高级数据结构与算法分析｜Advanced Data Structure and Algorithm Analysis:
+      - blog/Computer Science/ADS/index.md
+      - "Chapter 01: AVL trees, Splay Trees, and Amortized Analysis": blog/Computer Science/ADS/Chapter 1.md
+      - "Chapter 02: Red-Black Trees and B+ Trees": blog/Computer Science/ADS/Chapter 2.md
+      - "Chapter 03: Inverted File Index": blog/Computer Science/ADS/Chapter 3.md
+      - "Chapter 04: Leftist Heaps and Skew Heaps": blog/Computer Science/ADS/Chapter 4.md
+      - "Chapter 05: Binomial Queue": blog/Computer Science/ADS/Chapter 5.md
+      - "Chapter 06: Backtracking": blog/Computer Science/ADS/Chapter 6.md
+      - "Chapter 07: Divide and Conquer": blog/Computer Science/ADS/Chapter 7.md
+      - "Chapter 08: Dynamic Programming": blog/Computer Science/ADS/Chapter 8.md
+      - "Chapter 09: Greedy Algorithms": blog/Computer Science/ADS/Chapter 9.md
+      - "Chapter 10: NP Completeness": blog/Computer Science/ADS/Chapter 10.md
+      - "Chapter 11: Approximation": blog/Computer Science/ADS/Chapter 11.md
+      - "Chapter 12: Local Search": blog/Computer Science/ADS/Chapter 12.md
+      - "Chapter 13: Randomized Algorithm": blog/Computer Science/ADS/Chapter 13.md
+      - "Chapter 14: Parallel Algorithms": blog/Computer Science/ADS/Chapter 14.md
+      - "Chapter 15: External Sorting": blog/Computer Science/ADS/Chapter 15.md
+      - "Final Review": blog/Computer Science/ADS/Final.md
+    - 数据库系统｜Database System:
+      - blog/Computer Science/Database/index.md
+      - Notes:
+        - "Chapter 01: Introduction": blog/Computer Science/Database/Chapter 1.md
+        - "Chapter 02: The Relational Model": blog/Computer Science/Database/Chapter 2.md
+        - "Chapter 03: Introduction to SQL": blog/Computer Science/Database/Chapter 3.md
+        - "Chapter 04: Intermediate SQL": blog/Computer Science/Database/Chapter 4.md
+        - "Chapter 05: Advanced SQL": blog/Computer Science/Database/Chapter 5.md
+        - "Chapter 06: Entity-Relationship Model": blog/Computer Science/Database/Chapter 6.md
+        - "Chapter 07: Relational Database Design": blog/Computer Science/Database/Chapter 7.md
+        - "Chapter 08: Physical Storage Systems": blog/Computer Science/Database/Chapter 8.md
+        - "Chapter 09: Data Storage Structures": blog/Computer Science/Database/Chapter 9.md
+        - "Chapter 10: Indexing": blog/Computer Science/Database/Chapter 10.md
+        - "Chapter 11: Query Processing": blog/Computer Science/Database/Chapter 11.md
+        - "Chapter 12: Query Optimization": blog/Computer Science/Database/Chapter 12.md
+        - "Chapter 13: Transactions": blog/Computer Science/Database/Chapter 13.md
+        - "Chapter 14: Concurrency Control": blog/Computer Science/Database/Chapter 14.md
+        - "Chapter 15: Recovery System": blog/Computer Science/Database/Chapter 15.md
+      - Homeworks:
+        - "Homework 01": blog/Computer Science/Database/Homework 1.md
+        - "Homework 02": blog/Computer Science/Database/Homework 2.md
+        - "Homework 03": blog/Computer Science/Database/Homework 3.md
+        - "Homework 04": blog/Computer Science/Database/Homework 4.md
+        - "Homework 05": blog/Computer Science/Database/Homework 5.md
+        - "Homework 06": blog/Computer Science/Database/Homework 6.md
+        - "Homework 07": blog/Computer Science/Database/Homework 7.md
+        - "Homework 08": blog/Computer Science/Database/Homework 8.md
+        - "Homework 09": blog/Computer Science/Database/Homework 9.md
+        - "Homework 10": blog/Computer Science/Database/Homework 10.md
+        - "Homework 11": blog/Computer Science/Database/Homework 11.md
+        - "Homework 12": blog/Computer Science/Database/Homework 12.md
+        - "Homework 13": blog/Computer Science/Database/Homework 13.md
+        - "Homework 14": blog/Computer Science/Database/Homework 14.md
+        - "Homework 15": blog/Computer Science/Database/Homework 15.md
+    - 面向对象程序设计｜Object-Oriented Programming Using C++:
+      - blog/Computer Science/OOP/index.md
+      - "Chapter 01: Introduction to Object-Oriented Programming": blog/Computer Science/OOP/Chapter 1.md
+      - "Chapter 02: STL Containers": blog/Computer Science/OOP/Chapter 2.md
+      - "Chapter 03: Memory Model": blog/Computer Science/OOP/Chapter 3.md
+      - "Chapter 04: Class": blog/Computer Science/OOP/Chapter 4.md
+      - "Chapter 05: Composition and Inheritance": blog/Computer Science/OOP/Chapter 5.md
+      - "Chapter 06: Polymorphism": blog/Computer Science/OOP/Chapter 6.md
+      - "Chapter 07: Copy Constructor": blog/Computer Science/OOP/Chapter 7.md
+      - "Chapter 08: Operator Overloading": blog/Computer Science/OOP/Chapter 8.md
+      - "Chapter 09: Templates": blog/Computer Science/OOP/Chapter 9.md
+      - "Chapter 10: Exceptions": blog/Computer Science/OOP/Chapter 10.md
+      - "Chapter 11: Smart Pointers": blog/Computer Science/OOP/Chapter 11.md
+    - 计算机体系结构｜Computer Architecture:
+      - blog/Computer Science/Computer Architecture/index.md
+      - Notes:
+        - "Chapter 01: Fundamentals of Computer Design": blog/Computer Science/Computer Architecture/Chapter 1.md
+        - "Chapter 02: Memory Hierarchy": blog/Computer Science/Computer Architecture/Chapter 2.md
+        - "Chapter 03: Instruction-Level Parallelism (ILP)": blog/Computer Science/Computer Architecture/Chapter 3.md
+        - "Chapter 04: Data-Level Parallelism Architecture": blog/Computer Science/Computer Architecture/Chapter 4.md
+        - "Chapter 05: Thread-Level Parallelism": blog/Computer Science/Computer Architecture/Chapter 5.md
+      - Homeworks:
+        - "Homework 01": blog/Computer Science/Computer Architecture/Homework 1.md
+        - "Homework 02": blog/Computer Science/Computer Architecture/Homework 2.md
+        - "Homework 03": blog/Computer Science/Computer Architecture/Homework 3.md
+        - "Homework 04": blog/Computer Science/Computer Architecture/Homework 4.md
+        - "Homework 05": blog/Computer Science/Computer Architecture/Homework 5.md
+    - 工具｜Tools:
+      - blog/Computer Science/Tech/index.md
+      - CTF 相关:
+        - CyberChef: blog/Computer Science/Tech/CTF/CyberChef/CyberChef.md
+        - BurpSuite Professional: blog/Computer Science/Tech/CTF/BurpSuite Professional/BurpSuite Professional.md
+      - Iterm2:
+        - blog/Computer Science/Tech/Iterm2/Iterm2.md
+  - Mathematics: 
+    - 微积分（甲）｜Calculus : 
+      - blog/Math/Calculus/index.md
+    - 线性代数（甲）｜Linear Algebra: 
+      - blog/Math/Linear Algebra/index.md
+    - 离散数学及其应用｜Discrete Mathematics:
+      - blog/Math/Discrete mathmatics/index.md
+      - "Chapter 01: The Foundations:Logic and Proofs": blog/Math/Discrete mathmatics/Discrete mathmatics notes-Ch01.md
+      - "Chapter 02: The Basic Structures:Sets,Functions,Sequences,Sums and Matrices": blog/Math/Discrete mathmatics/Discrete mathmatics notes-Ch02.md
+      - "Chapter 03: Algorithms": blog/Math/Discrete mathmatics/Discrete mathmatics notes-Ch03.md
+      - "Chapter 04: The Number Theory and Cryptography": blog/Math/Discrete mathmatics/Discrete mathmatics notes-Ch04.md
+      - "Chapter 05: Induction and Recursion": blog/Math/Discrete mathmatics/Discrete mathmatics notes-Ch05.md
+      - "Chapter 06: Counting": blog/Math/Discrete mathmatics/Discrete mathmatics notes-Ch06.md
+      - "Chapter 07: Discrete Probability": blog/Math/Discrete mathmatics/Discrete mathmatics notes-Ch07.md
+      - "Chapter 08: Advanced Counting Techniques": blog/Math/Discrete mathmatics/Discrete mathmatics notes-Ch08.md
+      - "Chapter 09: Relations": blog/Math/Discrete mathmatics/Discrete mathmatics notes-Ch09.md
+      - "Chapter 10: Graphs": blog/Math/Discrete mathmatics/Discrete mathmatics notes-Ch10.md
+      - "Chapter 11: Trees": blog/Math/Discrete mathmatics/Discrete mathmatics notes-Ch11.md
+    - 概率论与数理统计｜Probability Theory and Mathematical Statistics:
+      - blog/Math/Probability Theory and Mathematical Statistics/index.md
+      - "Chapter 01: 概率论的基本概念": blog/Math/Probability Theory and Mathematical Statistics/Chapter 1.md
+      - "Chapter 02: 随机变量及其分布": blog/Math/Probability Theory and Mathematical Statistics/Chapter 2.md
+      - "Chapter 03: 多元随机变量及其分布": blog/Math/Probability Theory and Mathematical Statistics/Chapter 3.md
+      - "Chapter 04: 随机变量的数字特征": blog/Math/Probability Theory and Mathematical Statistics/Chapter 4.md
+      - "Chapter 05: 大数定律和中心极限定理": blog/Math/Probability Theory and Mathematical Statistics/Chapter 5.md
+      - "Chapter 06: 数理统计的基本概念": blog/Math/Probability Theory and Mathematical Statistics/Chapter 6.md
+      - "Chapter 07: 参数估计": blog/Math/Probability Theory and Mathematical Statistics/Chapter 7.md
+      - "Chapter 08: 假设检验": blog/Math/Probability Theory and Mathematical Statistics/Chapter 8.md
+    - 数值分析｜Numerical Analysis:
+      - blog/Math/Numerical Analysis/index.md
+      - Notes:
+        - "Chapter 01: Mathematical Preliminaries": blog/Math/Numerical Analysis/Chapter 1.md
+        - "Chapter 02: Solutions of Equations in One Variable": blog/Math/Numerical Analysis/Chapter 2.md
+        - "Chapter 06: Direct Methods for Solving Linear Systems": blog/Math/Numerical Analysis/Chapter 6.md
+        - "Chapter 07: Iterative Techniques in Matrix Algebra": blog/Math/Numerical Analysis/Chapter 7.md
+        - "Chapter 09: Approximating Eigenvalues": blog/Math/Numerical Analysis/Chapter 9.md
+        - "Chapter 03: Interpolation and Polynomial Approximation": blog/Math/Numerical Analysis/Chapter 3.md
+        - "Chapter 08: Approximation Theory": blog/Math/Numerical Analysis/Chapter 8.md
+        - "Chapter 04: Numerical Differentiation and Integration": blog/Math/Numerical Analysis/Chapter 4.md
+        - "Chapter 05: Initial-Value Problems for Ordinary Differential Equations": blog/Math/Numerical Analysis/Chapter 5.md
+      - Homeworks:
+        - "Homework 01": blog/Math/Numerical Analysis/Homework 1.md
+        - "Homework 02": blog/Math/Numerical Analysis/Homework 2.md
+        - "Homework 03": blog/Math/Numerical Analysis/Homework 3.md
+        - "Homework 04": blog/Math/Numerical Analysis/Homework 4.md
+        - "Homework 05": blog/Math/Numerical Analysis/Homework 5.md
+        - "Homework 06": blog/Math/Numerical Analysis/Homework 6.md
+        - "Homework 07": blog/Math/Numerical Analysis/Homework 7.md
+        - "Homework 08": blog/Math/Numerical Analysis/Homework 8.md
+        - "Homework 09": blog/Math/Numerical Analysis/Homework 9.md
+        - "Homework 10": blog/Math/Numerical Analysis/Homework 10.md
+        - "Homework 11": blog/Math/Numerical Analysis/Homework 11.md
+        - "Homework 12": blog/Math/Numerical Analysis/Homework 12.md
+        - "Homework 13": blog/Math/Numerical Analysis/Homework 13.md
+        - "Homework 14": blog/Math/Numerical Analysis/Homework 14.md
+        - "Quiz": blog/Math/Numerical Analysis/Quiz.md
+  - ACEE:
+    - 数学建模｜Mathematical Modeling:
+      - blog/ACEE/Mathematical Modeling/index.md
+      - Notes:
+        - "Chapter 01: 搜索引擎中的 PageRank 模型": blog/ACEE/Mathematical Modeling/Chapter 1.md
+        - "Chapter 02: 数学规划": blog/ACEE/Mathematical Modeling/Chapter 2.md
+        - "Chapter 03: 组合优化": blog/ACEE/Mathematical Modeling/Chapter 3.md
+        - "Chapter 04: 图论模型": blog/ACEE/Mathematical Modeling/Chapter 4.md
+        - "Chapter 05: 数论与组合模型": blog/ACEE/Mathematical Modeling/Chapter 5.md
+        - "Chapter 06: 随机模型": blog/ACEE/Mathematical Modeling/Chapter 6.md
+        - "Chapter 07: 秘书问题": blog/ACEE/Mathematical Modeling/Chapter 7.md
+        - "Chapter 08: 差分方程模型": blog/ACEE/Mathematical Modeling/Chapter 8.md
+        - "Chapter 09: 常微分方程模型": blog/ACEE/Mathematical Modeling/Chapter 9.md
+        - "Chapter 10: 博弈论模型": blog/ACEE/Mathematical Modeling/Chapter 10.md
+      - Homeworks:
+        - "Homework 01": blog/ACEE/Mathematical Modeling/Homework 1.md
+        - "Homework 02": blog/ACEE/Mathematical Modeling/Homework 2.md
+        - "Homework 03": blog/ACEE/Mathematical Modeling/Homework 3.md
+        - "Homework 04": blog/ACEE/Mathematical Modeling/Homework 4.md
+        - "Homework 05": blog/ACEE/Mathematical Modeling/Homework 5.md
+        - "Homework 06": blog/ACEE/Mathematical Modeling/Homework 6.md
+        - "Homework 07": blog/ACEE/Mathematical Modeling/Homework 7.md
+        - "Homework 08": blog/ACEE/Mathematical Modeling/Homework 8.md
+        - "Homework 09": blog/ACEE/Mathematical Modeling/Homework 9.md
+        - "Homework 10": blog/ACEE/Mathematical Modeling/Homework 10.md
+    - 信息理论｜Information Theory:
+      - blog/ACEE/Information Theory/index.md
+      - Notes:
+        - "Chapter 01: Introduction": blog/ACEE/Information Theory/Chapter 1.md
+        - "Part 01：信息的度量":
+          - "Chapter 02: 随机变量的熵和互信息": blog/ACEE/Information Theory/Chapter 2.md
+          - "Chapter 03: 连续随机变量的互信息和微分熵": blog/ACEE/Information Theory/Chapter 3.md
+          - "Chapter 04: 平稳离散信源的熵": blog/ACEE/Information Theory/Chapter 4.md
+        - "Part 02：信息的无损压缩":
+          - "Chapter 05: 等长编码": blog/ACEE/Information Theory/Chapter 5.md
+          - "Chapter 06: 不等长编码": blog/ACEE/Information Theory/Chapter 6.md
+        - "Part 03：信息的传输":
+          - "Chapter 07: 信道模型": blog/ACEE/Information Theory/Chapter 7.md
+          - "Chapter 08: 离散无记忆信道的容量定理": blog/ACEE/Information Theory/Chapter 8.md
+          - "Chapter 09: 离散无记忆信道的编码原理": blog/ACEE/Information Theory/Chapter 9.md
+          - "Chapter 10: 加性高斯噪声（AWGN）信道": blog/ACEE/Information Theory/Chapter 10.md
+      - Homeworks:
+        - "Homework 01": blog/ACEE/Information Theory/Homework 1.md
+        - "Homework 02": blog/ACEE/Information Theory/Homework 2.md
+        - "Homework 03": blog/ACEE/Information Theory/Homework 3.md
+    - 人工智能前沿｜AI Frontiers:
+      - blog/ACEE/AI/Final Review.md
+  - CTF:
+    - blog/CTF/index.md
+    - 2023-2024 暑短学期: 
+      - blog/CTF/2023-2024暑短学期/index.md
+      - Lab0: blog/CTF/2023-2024暑短学期/Lab0 Report.md
+      - Lab1-Crypto: blog/CTF/2023-2024暑短学期/Lab1-Crypto Report.md
+      - Lab1-Misc: blog/CTF/2023-2024暑短学期/Lab1-Misc Report.md
+      - Lab1-Pwn: blog/CTF/2023-2024暑短学期/Lab1-Pwn Report.md
+      - Lab1-Web: blog/CTF/2023-2024暑短学期/Lab1-Web Report.md
+      - Lab1-Rev: blog/CTF/2023-2024暑短学期/Lab1-Rev Report.md
+      - Lab2-Crypto: blog/CTF/2023-2024暑短学期/Lab2-Crypto Report.md
+      - Lab2-Misc: blog/CTF/2023-2024暑短学期/Lab2-Misc Report.md
+      - Lab3-Crypto: blog/CTF/2023-2024暑短学期/Lab3-Crypto Report.md
+      - Lab3-Misc: blog/CTF/2023-2024暑短学期/Lab3-Misc Report.md
+    - 2024.9 MoeCTF:
+      - blog/CTF/2024.9 MoeCTF/index.md
+      - Misc: 
+        - "Misc-1｜入门杂项指北": blog/CTF/2024.9 MoeCTF/Misc/Misc-1.md
+        - "Misc-2｜罗小黑战记": blog/CTF/2024.9 MoeCTF/Misc/Misc-2.md
+        - "Misc-3｜ez_Forensics": blog/CTF/2024.9 MoeCTF/Misc/Misc-3.md
+        - "Misc-4｜so many 'm'": blog/CTF/2024.9 MoeCTF/Misc/Misc-4.md
+        - "Misc-5｜Abnormal lag": blog/CTF/2024.9 MoeCTF/Misc/Misc-5.md
+        - "Misc-6｜Find It": blog/CTF/2024.9 MoeCTF/Misc/Misc-6.md
+        - "Misc-7｜Signin": blog/CTF/2024.9 MoeCTF/Misc/Misc-7.md
+        - "Misc-8｜ez_F5": blog/CTF/2024.9 MoeCTF/Misc/Misc-8.md
+        - "Misc-9｜moejail_lv1": blog/CTF/2024.9 MoeCTF/Misc/Misc-9.md
+      - Crypto:
+        - "Crypto-1｜现代密码学入门指北": blog/CTF/2024.9 MoeCTF/Crypto/Crypto-1.md
+        - "Crypto-2｜Signin": blog/CTF/2024.9 MoeCTF/Crypto/Crypto-2.md
+        - "Crypto-3｜ez_hash": blog/CTF/2024.9 MoeCTF/Crypto/Crypto-3.md
+        - "Crypto-4｜Big and Small": blog/CTF/2024.9 MoeCTF/Crypto/Crypto-4.md
+        - "Crypto-5｜baby_equation": blog/CTF/2024.9 MoeCTF/Crypto/Crypto-5.md
+        - "Crypto-6｜大白兔": blog/CTF/2024.9 MoeCTF/Crypto/Crypto-6.md
+        - "Crypto-7｜More_secure_RSA": blog/CTF/2024.9 MoeCTF/Crypto/Crypto-7.md
+        - "Crypto-8｜ezlegendre": blog/CTF/2024.9 MoeCTF/Crypto/Crypto-8.md
+    - 2024.10 ZJUCTF:
+      - blog/CTF/2024.10 ZJUCTF/index.md
+      - Misc:
+        - "Misc｜小A口算": blog/CTF/2024.10 ZJUCTF/Misc/Misc-3.md
+        - "Misc｜Master of C++": blog/CTF/2024.10 ZJUCTF/Misc/Misc-4.md
+      - Crypto:
+        - "Crypto｜ezxor": blog/CTF/2024.10 ZJUCTF/Crypto/Crypto-1.md
+        - "Crypto｜Shad0wTime": blog/CTF/2024.10 ZJUCTF/Crypto/Crypto-2.md
+    - 2024.12 国赛初赛:
+      - blog/CTF/2024.12国赛/index.md
+      - "Crypto｜rasnd": blog/CTF/2024.12国赛/rasnd.md
+    - 密码学｜Cryptography:
+      - blog/CTF/Cryptography/index.md
+      - "Chapter 01: 数学基础": blog/CTF/Cryptography/Chapter 1.md
+      - "Chapter 02: 古典密码": blog/CTF/Cryptography/Chapter 2.md
+      - "Chapter 03: Hash 函数": blog/CTF/Cryptography/Chapter 3.md
+      - "Chapter 04: 分组密码工作模式与流密码": blog/CTF/Cryptography/Chapter 4.md
+      - "Chapter 05: DES 算法和 AES 算法": blog/CTF/Cryptography/Chapter 5.md
+      - "Chapter 06: RSA 算法": blog/CTF/Cryptography/Chapter 6.md
+      - "Chapter 07: 椭圆曲线（Elliptic Curve）算法": blog/CTF/Cryptography/Chapter 7.md
+  - Research:
+    - "Reading Papers":
+      - blog/Research/Reading/index.md
+      - RAG:
+        - "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks": blog/Research/Reading/RAG/Note01.md
+      - Others:
+        - "SEED emulator : an internet emulator for research and education": blog/Research/Reading/Others/SEED Emulator Notes.md
+        - "From Sands to Mansions : Towards Automated Cyberattack Emulation with Classical Planning and Large Language Models": blog/Research/Reading/Others/AURORA Notes.md
+        - "PentestAgent: Incorporating LLM Agents to Automated Penetration Testing": blog/Research/Reading/Others/PentestAgent Notes.md
+    - Seedlab:
+      - blog/Research/Seedlab/index.md
+      - Knowledge:
+        - Hardware:
+          - "Meltdown Attack": blog/Research/Seedlab/Knowledge/Hardware/Meltdown Attack.md
+        - Software:
+          - "Linux Security Basics": blog/Research/Seedlab/Knowledge/Software/Basic.md
+          - "Set UID": blog/Research/Seedlab/Knowledge/Software/Set UID.md
+          - "Shellshock": blog/Research/Seedlab/Knowledge/Software/Shellshock.md
+          - "Buffer Overflow": blog/Research/Seedlab/Knowledge/Software/Buffer Overflow.md
+          - "Return-to-libc": blog/Research/Seedlab/Knowledge/Software/Return-to-Libc.md
+          - "Race Condition": blog/Research/Seedlab/Knowledge/Software/Race Condition.md
+          - "Dirty COW": blog/Research/Seedlab/Knowledge/Software/Dirty COW.md
+        - Network:
+          - "BGP and Attacks": blog/Research/Seedlab/Knowledge/Network/BGP Basic.md
+          - "DNS Remote-Kaminsky Attack": blog/Research/Seedlab/Knowledge/Network/Kaminsky.md
+        - Reports:
+          - "Network Security":
+            - "Sniffing Spoofing": blog/Research/Seedlab/Knowledge/Reports/Sniffing Spoofing.md
+            - "ARP Attack": blog/Research/Seedlab/Knowledge/Reports/ARP Attack.md
+            - "ICMP Redirect": blog/Research/Seedlab/Knowledge/Reports/ICMP Redirect.md
+            - "DNS Remote": blog/Research/Seedlab/Knowledge/Reports/DNS Remote.md
+          - "Software Security":
+            - "Set UID": blog/Research/Seedlab/Knowledge/Reports/Set UID.md
+            - "Shellshock": blog/Research/Seedlab/Knowledge/Reports/Shellshock.md
+            - "Shellcode": blog/Research/Seedlab/Knowledge/Reports/Shellcode.md
+            - "Buffer Overflow-Server": blog/Research/Seedlab/Knowledge/Reports/Buffer Overflow Server.md
+            - "Buffer Overflow-SetUID": blog/Research/Seedlab/Knowledge/Reports/Buffer Overflow SetUID.md
+            - "Return-to-libc": blog/Research/Seedlab/Knowledge/Reports/Return-to-libc.md
+            - "Race Condition": blog/Research/Seedlab/Knowledge/Reports/Race Condition.md
+            - "Dirty COW": blog/Research/Seedlab/Knowledge/Reports/Dirty COW.md
+      - Basic-labs:
+        - "A00_simple_as": blog/Research/Seedlab/Basic-Labs/A00_simple_as.md
+  # - Internship:
+  #   - 大模型: 
+  #     - 《从零开始大模型开发与微调-基于PyTorch与ChatGLM》: blog/Internship/Learning AI Notes.md
+  #   - API 接口测试: 
+  #     - 接口测试: blog/Internship/MeterSphere 使用手册.md
+  #     - 压力测试: blog/Internship/Locust 压力测试工具使用手册.md
+  - Others:
+    - 大学英语IV｜College English Band IV: 
+      - blog/Others/College English Band IV/index.md
+    - 托福阅读｜TOEFL Reading: 
+      - blog/Others/TOEFL Reading/index.md
+      - Lesson 1: blog/Others/TOEFL Reading/Lesson 1.md
+      - Lesson 2: blog/Others/TOEFL Reading/Lesson 2.md
+      - Lesson 3: blog/Others/TOEFL Reading/Lesson 3.md
+      - Lesson 4: blog/Others/TOEFL Reading/Lesson 4.md
+      - Lesson 5: blog/Others/TOEFL Reading/Lesson 5.md
+      - Lesson 6: blog/Others/TOEFL Reading/Lesson 6.md
+      - Lesson 7: blog/Others/TOEFL Reading/Lesson 7.md
+    - 大学物理实验｜College Physical Experiments: 
+      - blog/Others/College Physical Experiments/index.md
+  - About:
+    - 作者个人简介: about/geren.md
+    - 友链: about/link.md
+      # - 功能测试: about/test.md
+
+copyright: Copyright &copy; 2024 BruceJin/All Rights Reserved. # 左下角的版权声明
+
+extra:
+  generator: true #是否删除页脚显示“使用 MkDocs 材料制造”
+  social:
+    # - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
+    #   link: https://twitter.com/wcowin_
+    - icon: fontawesome/brands/github
+      link: https://github.com/BruceJqs
+
+    - icon: fontawesome/regular/envelope #联系方式图标
+      link: mailto:<brucejin1005@gmail.com> #邮件联系方式
+    # - icon: fontawesome/brands/bilibili
+    #   link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
+  analytics:
+    provider: google #谷歌分析
+    property:
+
+    # 网页底部反馈
+    feedback:
+      title: 此页面有帮助吗？
+      ratings:
+        - icon: material/thumb-up-outline #图标可自定义
+          name: This page was helpful
+          data: 1
+          note: >-
+            谢谢你的反馈！
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
+  # cookies设置（可选）
+  # consent:
+  #   title: Cookie consent
+  #   description: >-
+  #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+  #     如果你同意,你可以帮助我们让我们的网站更好
+
+plugins:
+  # - rss
+  - search #搜索配置
+  - statistics:
+      words_per_minute: 200
+  - git-committers:
+      enabled: !ENV [CI, false]
+      repository: BruceJqs/MyNotebook
+      branch: main
+      exclude:
+        - index.md
+        - tag.md
+        - blog/posts/update.md
+        - blog/posts/wkw.md
+        - about/link.md
+  - git-revision-date-localized:
+      type: datetime
+      timezone: Asia/Shanghai
+      locale: zh
+      enable_creation_date: true
+      exclude:
+        - index.md
+        - tag.md
+        - blog/posts/update.md
+        - blog/posts/wkw.md
+        - about/link.md
+        - websitebeauty/linktech.md
+  - blog: #博客配置
+      post_date_format: full #时间
+      draft: true
+      draft_if_future_date: true #自动将具有未来日期的帖子标记为草稿
+      post_readtime: true
+      post_readtime_words_per_minute: 265 #计算帖子的阅读时间时读者每分钟预计阅读的字数
+      post_url_format: "{date}/{slug}"
+      # categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+      #   kwds:
+      #     case: lower
+      pagination_url_format: "page/{page}"
+      # authors_file: "{blog}/.authors.yml" #作者信息
+  - tags:
+      tags_file: tag.md #分类标签
+
+markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
+  - abbr
+  - attr_list
+  - admonition
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - sane_lists
+  - meta # 支持Markdown文件上方自定义标题标签等
+  - pymdownx.caret
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - pymdownx.magiclink
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format:
+            !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+
+  - pymdownx.arithmatex: # latex支持
+      generic: true
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      linenums: true # 显示行号
+      line_spans: __span
+      pygments_lang_class: true
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.pathconverter
+  # - markdown.extensions.toc:
+  #     slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+  #     permalink: "\ue157"
+
+extra_javascript:
+  - javascripts/extra.js #自定义javascript
+  # - ckplayer/js/ckplayer.js #播放器配置
+  # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js  #gitalk支持
+  - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js #忘了
+
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js
+  - javascripts/glightbox.min.js
+
+extra_css:
+  - stylesheets/extra.css # 自定义CSS
+  - stylesheets/link.css #友链配置
+  - stylesheets/customize.css # 搜索圆角优化
+
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
+  - stylesheets/tasklist.css
+  - stylesheets/card.css
+  - stylesheets/flink.css
+  - stylesheets/glightbox.min.css
+  - stylesheets/changelog_extra.css
+
+  # - stylesheets/video.css #播放器可选配置
+  # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #gitalk支持
+  # - ckplayer/css/ckplayer.css   #播放器配置
+  - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
+  # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css  #分享支持
+
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css #字体
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css #字体
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体
