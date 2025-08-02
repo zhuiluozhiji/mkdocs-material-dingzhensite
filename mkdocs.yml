@@ -59,7 +59,7 @@ markdown_extensions:
 
 theme:
   name: material
-  custom_dir: docs/overrides #覆写路径
+  # custom_dir: docs/overrides #覆写路径
   icon:
     logo : fontawesome/solid/w
 
