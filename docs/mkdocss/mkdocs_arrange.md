@@ -127,7 +127,7 @@ Here is an example with different code blocks:
 
 === "Python"
 
-    ```py
+    
     def main():
         print("Hello world!")
 
