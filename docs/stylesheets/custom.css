@@ -50,7 +50,7 @@
 }
 
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #efefef;
+  --md-primary-fg-color: #ed3d3d;
   --md-primary-bg-color: #000000;
   --md-typeset-a-color: #555555;
   --md-footer-fg-color: #000000;
@@ -247,7 +247,7 @@ input#mkdocs-content-password {
 }
 
 .toc-tag {
-  background-color: #3f6ec6b0;
+  background-color: #036023b0;
   border-radius: 3px;
   font-size: 80%;
   padding: 3px;
