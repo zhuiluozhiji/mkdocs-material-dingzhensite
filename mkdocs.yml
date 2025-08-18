@@ -248,11 +248,13 @@ nav:
       - sdl project : cpp/sdl2/sdl2.md
       - sdl2 learning : cpp/sdl2/sdl2_learning.md
     - 🎨 sfml : cpp/sfml/sfml_learning.md
+    - project : cpp/project/note.md
+
   - 🔒 python:
     - project: python/project.md
     - python learning: python/python_learning.md
 
-  - 🔥 skill:
+  - 🔥 技术栈:
     - 🐳 git : 
       - skill/git/index.md
       - skill/git/git.md

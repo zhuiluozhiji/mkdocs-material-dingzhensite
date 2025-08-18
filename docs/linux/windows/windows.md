@@ -22,3 +22,8 @@ cd..      //跳转到上一层目录
 - dir ： 查看当前目录下的文件
 - ![alt text](image.png)
 
+
+- Powershell 删除文件夹
+```shell
+Remove-Item -Path "文件夹路径" -Recurse -Force
+```

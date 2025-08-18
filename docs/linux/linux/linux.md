@@ -33,12 +33,57 @@ C:\Windows\System32>wsl --set-default Ubuntu
 ## linux基操
 [菜鸟教程 Linux 命令手册](https://www.runoob.com/linux/linux-command-manual.html){:target="_blank"}
 
+### rm
 ```shell
 # 强制+递归 的删除  -f强制  r递归
 rm -rf /path/to/folder
 ```
 
+### cp
+`cp`复制文件指令
 
+![](image/linux/2025-08-16-17-03-47.png)
+
+### tar打包
+
+只打包可运行版本:
+```shell
+mkdir -p release
+cp build/bin/mygame release/
+cp -r assets release/
+cp README.md release/
+```
+`-r`参数是递归，
+
+
+```shell
+tar -czvf mygame-v1.0.0-linux.tar.gz release/
+```
+- c = create 创建
+
+- z = gzip 压缩
+
+- v = verbose 显示过程（可省略）
+
+- f mygame-v1.0.0-linux.tar.gz = 输出文件名
+- release 要打包的目录
+
+`mygame-v1.0.0-linux.tar.gz` 就是一个干净的发行版压缩包。
+
+
+解压：
+```shell
+tar -xzvf minisql-master.tar.gz
+```
+- x：解压
+- z：解压 gzip 格式
+- v：显示过程（可选）
+- f：指定文件名
+
+如需指定解压到某个目录，例如 ~/code/minisql，可以这样
+```shell
+tar -xzvf minisql-master.tar.gz -C ~/code/minisql
+```
 
 ## 常识
 ### `~`目录下隐藏文件
