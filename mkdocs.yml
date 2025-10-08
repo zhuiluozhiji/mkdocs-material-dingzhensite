@@ -262,6 +262,10 @@ nav:
       - Page 2 : skill/git/git_workflow.md
     - 📟 shell : 
       - skill/shell/shell.md
+    - 🐍 服务器 :
+      - skill/server/server.md
+    - 🐋 大模型训练 :
+      - skill/ai/model.md
 
   - others: 
     - Clash Royale: others/Clash_Royale/Clash_Royale.md
